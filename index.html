@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamie Whitbeck – Development Project Portfolio</title>
+  <style>
+    body {
+      background-color: #C7DDE7;
+      font-family: "Calibri Light", Calibri, sans-serif;
+      font-size: 14pt;
+      color: black;
+      line-height: 1.35;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 {
+      font-family: Calibri, sans-serif;
+      font-size: 20pt;
+      font-weight: bold;
+      color: #0E2841;
+    }
+    h2 {
+      font-family: Calibri, sans-serif;
+      font-size: 20pt;
+      color: black;
+      margin-bottom: 0em;
+    }
+    a {
+      font-family: Calibri, sans-serif;
+      font-weight: bold;
+      font-size: 14pt;
+      color: #0E2841;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .project {
+      margin-bottom: 2em;
+    }
+    .contact {
+      color: #0E2841;
+      font-family: Calibri, sans-serif;
+      margin-top: 3em;
+      margin-bottom: 0em;
+    }
+    .last-updated {
+      font-size: 11pt;
+      font-style: italic;
+      color: black;
+      margin-top: 1em;
+    }
+   .subtitle {
+     font-family: "Calibri Light", Calibri, sans-serif;
+     font-size: 12pt;
+     color: black;
+     margin-top: 0;
+     margin-bottom: 2em;
+   }
+  </style>
+</head>
+<body>
+  <h1>Jamie Whitbeck – Development Project Portfolio</h1>
+
+  <p>Welcome to my project portfolio. I have nearly a decade of experience in data management, analysis, SQL engineering, ETL design, and database administration. This curated selection of technical write-ups—from both professional and personal projects—highlights how I think, build, and troubleshoot. Each project includes a detailed write-up. Where practical, I have included screenshots or actual code samples. Where necessary, redactions were made to maintain client security and confidentiality.</p>
+
+  <p>This collection is a work in progress, as I only recently began documenting my work for public consumption. I will continue updating the portfolio as more projects are written up.</p>
+
+  <h2>Selected Projects</h2>
+  <div class="subtitle">(Project titles link to PDF write-ups)</div>
+
+  <div class="project">
+    <a href="https://github.com/jaycwhitbeck/portfolio/blob/main/JamieWhitbeck_SQL_CaseStudy_ListPagination.pdf">Mobile Application List Pagination Procedure</a>
+    <p>While supporting development of a mobile CMMS app as the Lead SQL Developer, I was asked to optimize a stored procedure used for paginating item lists. Execution times averaged 27 seconds—clearly unacceptable. I discovered the developer planned to replicate this procedure over 300 times, once per module. Given that some servers housed over 500 databases, I immediately saw the maintenance nightmare this would create. I designed a single, dynamic, parameterized procedure that eliminated the redundancy and slashed execution times to under 20 milliseconds—a 99.94% improvement.</p>
+  </div>
+
+  <div class="project">
+    <a href="https://github.com/jaycwhitbeck/portfolio/blob/main/JamieWhitbeck_SQL_CaseStudy_Encryption.pdf">User Data Encryption</a>
+    <p>As the DBA for a CMMS vendor with over 1,000 tenant databases and thousands of on-premises clients, I discovered that the "encryption" used for user credentials was laughably insecure—especially considering some clients were government agencies, hospitals, and critical infrastructure organizations. I built a robust, standards-compliant solution to secure all credentials, resolving a gaping vulnerability before it became a real incident.</p>
+  </div>
+
+  <div class="project">
+    <a href="https://github.com/jaycwhitbeck/portfolio/blob/main/JamieWhitbeck_Python_CaseStudy_DocumentStore.pdf">Document Storage Application</a>
+    <p>A fun personal project and Python GUI learning exercise. A friend needed a local, searchable database for storing scraped text—no web apps, no cloud, no fuss. I built a standalone SQLite-backed desktop application with a full GUI that handled input, classification, search, and display far beyond what he expected. He will never lose his documentation on canning squirrels and proper roadkill preparation again.</p>
+  </div>
+
+  <div class="contact">
+    Inquiries for additional details, compliments, or job offers welcome at:
+    <a href="mailto:jaycwhitbeck@gmail.com">jaycwhitbeck@gmail.com</a>
+  </div>
+
+  <div class="last-updated">Last updated: June 16, 2025</div>
+</body>
+</html>
