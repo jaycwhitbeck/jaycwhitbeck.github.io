@@ -6,13 +6,12 @@
   <title>Jamie Whitbeck – Development Project Portfolio</title>
   <style>
     body {
-      background-color: #C7DDE7;
-      font-family: "Calibri Light", Calibri, sans-serif;
+	  font-family: "Calibri Light", Calibri, sans-serif;
       font-size: 14pt;
       color: black;
       line-height: 1.35;
-      padding: 40px;
-      max-width: 900px;
+      padding: 0;
+      max-width: 800px;
       margin: auto;
     }
     h1 {
@@ -37,6 +36,22 @@
     a:hover {
       text-decoration: underline;
     }
+	.background {
+      background: url('https://jaycwhitbeck.github.io/indexbackground.jpg') center center / cover;
+      position: fixed;
+      top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  z-index: -1;
+	  opacity: 0.3;
+    }
+	.content {
+       background-color: rgba(0,0,0,0.6);
+	   padding: 0;
+	   max-width: 800px;
+	   margin: auto;
+	}
     .project {
       margin-bottom: 2em;
     }
@@ -62,6 +77,7 @@
   </style>
 </head>
 <body>
+  <div class="background"></div>
   <h1>Jamie Whitbeck – Development Project Portfolio</h1>
 
   <p>Welcome to my project portfolio. I have nearly a decade of experience in data management, analysis, SQL engineering, ETL design, and database administration. This curated selection of technical write-ups—from both professional and personal projects—highlights how I think, build, and troubleshoot. Each project includes a detailed write-up. Where practical, I have included screenshots or actual code samples. Where necessary, redactions were made to maintain client security and confidentiality.</p>
